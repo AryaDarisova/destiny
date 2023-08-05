@@ -33,22 +33,28 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="mog-QF-PME"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Choice 1" backgroundImage="choice1Background">
                                             <color key="titleColor" red="0.9137254901960784" green="0.91764705882352937" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpr-3s-g6r"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-qg-Dfq">
                                         <rect key="frame" x="0.0" y="714" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="gc2-MC-9Gj"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Choice 2" backgroundImage="choice2Background">
                                             <color key="titleColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29V-iL-qfU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,6 +72,11 @@
                             <constraint firstAttribute="trailing" secondItem="2Zx-6h-pn3" secondAttribute="trailing" id="uy9-Bu-mka"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Btn" destination="a50-Yp-FWZ" id="qEe-gL-s2N"/>
+                        <outlet property="choice2Btn" destination="NKE-qg-Dfq" id="SaG-di-Oge"/>
+                        <outlet property="storyLabel" destination="Rsm-qn-z1a" id="7oj-U7-68u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
